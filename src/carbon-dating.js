@@ -8,9 +8,7 @@ module.exports = function dateSample( sampleActivity ) {
       if(!arguments ||arguments.length === 0) return false
       if(typeof(sampleActivity) !== String) return false
       sampleActivity = parseInt(sampleActivity)
-      
       if(sampleActivity>15||sampleActivity<=0)return false
- 
       let num = Math.log(MODERN_ACTIVITY/sampleActivity)
       return Math.ceil(num/KOEF)
       

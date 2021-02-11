@@ -6,9 +6,7 @@ module.exports = function transform(arr) {
   if(!Array.isArray(arr)) throw 'THROWN'
   if(arguments.length === 0) throw 'THROWN'
   if(arr.length == 0) return arr
-  
-  
-  
+
   for(let i = 0; i < arr1.length; i++){
     if(arr1[i] == '--discard-next' && arr1[i+2] == '--double-prev') arr1.splice(i, 3)
     if(arr1[i] == '--discard-next' && arr1[i+2] == '--discard-prev') arr1.splice(i, 3)
